@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>
+	Implement this interface to connect your code to the user interface.
+	</title>
+</head>
+<body>  
+  <ul>
+  <li>For separating the code that you wrote from the code that was provided to you,
+  put <b>your code in the <code>src</code> folder.</b>
+  The code that is provided to you stays in the <code>src-provided</code> folder.
+  If you modify the provided code, it's advised to move the modified code to the <code>src</code> folder as well,
+  so that your changes are not accidentally overwritten by an update.
+  </li>
+  
+  <li>You should at least add the following classes to the package <code>worms.model</code>:
+  <ul>
+  <li>a class <code>World</code> for representing the world</li>
+  <li>a class <code>Worm</code> for representing a worm</li>
+  <li>a class <code>Food</code> for representing a food ration</li>
+  <li>a class <code>Projectile</code> for representing a projectile</li>
+  <li>a class <code>Program</code> for representing a program</li>
+  <li>a class <code>Facade</code> that implements this interface (<code>IFacade</code>).</li>
+  </ul>
+  
+  <li>
+   The header of that Facade class should look as follows:<br>
+  <code>class Facade implements IFacade { ... }</code><br>
+   Consult the <a href=
+  "http://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html">
+  Java tutorial</a> for more information on interfaces, if necessary.
+  </li>
+  
+  <li>Each method defined in the interface <code>IFacade</code> must be
+  implemented by the class <code>Facade</code>. For example, the implementation
+  of <code>getX</code> should call a method of the given <code>worm</code> to
+  retrieve its x-coordinate.</li>
+  
+  <li>Methods in this interface are allowed to throw only
+  <code>ModelException</code>. No other exception types are allowed. This
+  exception can be thrown only if calling a method of your <code>Worm</code>
+  class with the given parameters would violate a precondition or if the method
+  of your <code>Worm</code> class throws an exception (if so, wrap the
+  exception in a <code>ModelException</code>). <b>ModelException should not be
+  used anywhere outside of your Facade implementation.</b></li>
+  
+  <li>The rules described above and the documentation described below for each
+  method apply only to the class implementing IFacade. Your class for
+  representing worms should follow the rules described in the assignment.</li>
+  
+  <li>Do not modify the signatures of the methods defined in this interface.
+  You can however add additional methods, as long as these additional methods
+  do not overload the existing ones. Each additional method must be implemented
+  in your class <code>Facade</code>.</li>
+  
+  <li>Your <code>Facade</code> class should offer a default constructor.</li>
+  </ul>
+</body>
+</html>

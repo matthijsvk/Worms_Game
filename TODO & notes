@@ -1,0 +1,51 @@
+TODO
+- klassen Type, expression, statement implementeren
+- programFactoryImplementation implementeren
+- klassse Program implementeren
+- Worm en World aanpssen, zodat computer-wormen automatisch programma's uitvoeren.
+- Getters vervangen door clones
+- Type checking in Java when creating programs
+- Doc-comment
+- Tests
+
+
+zelf programma laten uitvoeren
+- methode om 1 stap uit te voeren
+- methode om n stappen uit te voeren tot de ap's op zijn
+
+-> dus: bijhouden waar je in de executie zit
+		bijhouden wat de variabelen op het moment van stoppen van de executie zijn
+
+Type: x
+Expression: x:=b
+Statement: al de rest
+
+QUESTIONS:
+- when running the parser, we use a dummy worm in a dummy world. then, when (in the constructor of worm) 
+the program is linked to the given worm, we set the actionhandler and the worm to the given actionhandler/worm.
+Is this an okay way for linking the worm?
+> probeer dummy's zo veel mogelijk te vermijden _> geen probleem met specs in software
+
+- is it okay if we use the predefined classes Object, Boolean and Double (instead of creating our own)?
+> mogelijkheden om uit te breiden zijn te beperkt.
+> aan alle objecten, niet alleen function(), maar ook een gettype().
+
+- there is only one variable-constructor in ProgramFactory, so how do you know from which type the constructed variable is?
+You need this in Assignment, to check if the assigned object is from a good type. (we are, in this method, also not able to
+initialise this variable with a dummyvalue. should we?)
+- in the skip()-method, do you have to start a next turn (in the world)
+> skip doet niks.
+> zorg wel voor goede management ivm. AP's en automatisch starten van volgende beurt. (niet automatisch naar volgende) 
+- when and how do we access the globals? (assigmnent?)
+- how to break and get back into a program? (looks like api-control)
+- if program counter== 1000, automatically start next turn (and how?)
+
+
+
+/////   DEEL 3  //////////
+
+- stop and restart program at right moment (if >1000 lines OR too little action points)
+- sameTeam()
+- searchObject()
+- createVariableAcces()
+- is the print statement correct? it doesn't seem to print Entities, just their names

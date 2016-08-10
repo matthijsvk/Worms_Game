@@ -1,0 +1,40 @@
+double x;
+double y;
+double z;
+
+x := (0.5 + 0.5);
+skip;
+turn(x);
+z := 1 + 1 + 1;
+print z;
+toggleweap;
+if (true) then {
+ 	fire 10; 
+ }
+if (true) then { 
+	fire 100; 
+}
+else{
+ 	 skip; 
+ }
+if (false) then{ 
+	skip; //aangepast! lege if's worden verkeerd geparsed.
+}
+ else{ 
+ 	fire 50; 
+ }
+move;
+skip;
+toggleweap;
+move;
+fire 1;
+skip;
+y := getradius(self);
+while (true && (true || false)) do {
+  turn(0.5);
+  toggleweap;
+  fire (50);
+}
+skip;
+fire 100;
+jump;

@@ -1,0 +1,15 @@
+double d := 0.01;
+bool b := true;
+entity w;
+
+while(b) {
+  w := searchobj(0);
+  if (isworm(w)) {
+    fire 100;
+  } 
+  else {
+    turn d;
+    d := d + 0.01;
+  }
+}
+

@@ -1,0 +1,43 @@
+bool b;
+double x; // test
+double y;
+entity s;
+
+x := ( 3 * 4 ); // comment
+// comment
+y := (-33.5 * (+55 / 1.22));
+
+jump;
+turn( 5 ) ;
+turn( 0.2 ) ;
+turn( -0.2 );
+toggleweap;
+fire (5);
+
+if (x >= 5) then
+ { skip; }
+else
+ { fire (0.4); }
+
+while y do
+ { turn (0.01);
+   y := (y - 1); };
+
+;; ;;; ;
+
+while y do
+ { move;
+   y := (y - 1);
+   if (true) then {skip; }
+   else {
+     while (false) do
+       {skip;}
+   }
+ }
+
+if (true) { } else {}
+
+foreach (worm, w) do
+ { toggleweap; fire 100; }
+
+

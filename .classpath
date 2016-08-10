@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<!--source files -->
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="src-provided"/>
+	<classpathentry kind="src" path="tests"/>
+	<classpathentry kind="src" path="resources"/>
+	<!--libraries -->
+	<classpathentry kind="lib" path="lib/AnnotationsDoclets.jar"/>
+	<classpathentry kind="lib" path="lib/antlr-runtime-4.2.2.jar"/>
+	<!--plugin containers -->
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+ 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>	
+	<!--output files stored in: -->
+	<classpathentry kind="output" path="bin"/>
+</classpath>
